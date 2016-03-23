@@ -1,11 +1,8 @@
 # HyperlinkAuth
 
-[![Build Status](https://img.shields.io/travis/UseMuffin/HyperlinkAuth/master.svg?style=flat-square)](https://travis-ci
-.org/UseMuffin/HyperlinkAuth)
-[![Coverage](https://img.shields.io/codecov/c/github/UseMuffin/HyperlinkAuth.svg?style=flat-square)](https://codecov
-.io/github/UseMuffin/HyperlinkAuth)
-[![Total Downloads](https://img.shields.io/packagist/dt/muffin/hyperlinkauth.svg?style=flat-square)](https://packagist
-.org/packages/muffin/hyperlinkauth)
+[![Build Status](https://img.shields.io/travis/UseMuffin/HyperlinkAuth/master.svg?style=flat-square)](https://travis-ci.org/UseMuffin/HyperlinkAuth)
+[![Coverage](https://img.shields.io/codecov/c/github/UseMuffin/HyperlinkAuth.svg?style=flat-square)](https://codecov.io/github/UseMuffin/HyperlinkAuth)
+[![Total Downloads](https://img.shields.io/packagist/dt/muffin/hyperlinkauth.svg?style=flat-square)](https://packagist.org/packages/muffin/hyperlinkauth)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
 Password-less authentication for CakePHP 3.
@@ -69,7 +66,7 @@ public function login()
         return $this->redirect($this->Auth->redirectUrl());
     }
 
-    $this->Flash->error(__('Username or password is incorrect'), [
+    $this->Flash->error(__('Email is incorrect'), [
         'key' => 'auth'
     ]);
 }
@@ -133,3 +130,4 @@ Copyright (c) 2016, [Use Muffin][muffin] and licensed under [The MIT License][mi
 [mit]:http://www.opensource.org/licenses/mit-license.php
 [muffin]:http://usemuffin.com
 [standards]:http://book.cakephp.org/3.0/en/contributing/cakephp-coding-conventions.html
+[1]:http://book.cakephp.org/3.0/en/controllers/components/authentication.html#identifying-users-and-logging-them-in

@@ -1,0 +1,58 @@
+{
+    "name": "muffin/hyperlinkauth",
+    "description": "Password-less authentication for CakePHP 3",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "muffin",
+        "auth",
+        "authentication",
+        "password less",
+        "no password",
+        "hyperlink"
+    ],
+    "homepage": "https://github.com/usemuffin/hyperlinkauth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jad Bitar",
+            "homepage": "http://jadb.io",
+            "role": "Author"
+        },
+        {
+            "name": "ADmad",
+            "homepage": "https://github.com/ADmad",
+            "role": "Author"
+        },
+        {
+            "name": "Others",
+            "homepage": "https://github.com/usemuffin/hyperlinkauth/graphs/contributors"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/usemuffin/hyperlinkauth/issues",
+        "source": "https://github.com/usemuffin/hyperlinkauth"
+    },
+    "require-dev": {
+        "cakephp/cakephp": "~3.0",
+        "phpunit/phpunit": "~4.1"
+    },
+    "suggest": {
+        "muffin/tokenize": "Tokens abstraction plugin for CakePHP 3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Muffin\\HyperlinkAuth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Muffin\\HyperlinkAuth\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

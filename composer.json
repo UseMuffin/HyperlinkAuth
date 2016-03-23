@@ -33,8 +33,10 @@
         "issues": "https://github.com/usemuffin/hyperlinkauth/issues",
         "source": "https://github.com/usemuffin/hyperlinkauth"
     },
+    "require": {
+        "cakephp/cakephp": "~3.0"
+    },
     "require-dev": {
-        "cakephp/cakephp": "~3.0",
         "phpunit/phpunit": "~4.1"
     },
     "suggest": {

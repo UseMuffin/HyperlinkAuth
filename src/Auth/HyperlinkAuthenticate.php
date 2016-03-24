@@ -6,7 +6,7 @@ use Cake\Controller\ComponentRegistry;
 use Cake\Network\Request;
 use Cake\Network\Response;
 use Cake\ORM\TableRegistry;
-use Cake\Utility\Text;
+use Cake\Utility\Security;
 
 class HyperlinkAuthenticate extends FormAuthenticate
 {
@@ -14,6 +14,7 @@ class HyperlinkAuthenticate extends FormAuthenticate
         'token' => [
             'parameter' => 'token',
             'detector' => 'token',
+            'length' => 10,
             'expires' => '+10 mins',
             'finder' => null,
             'factory' => null,
@@ -76,7 +77,7 @@ class HyperlinkAuthenticate extends FormAuthenticate
         $table = TableRegistry::get($config['userModel']);
         $conditions = [$fields['username'] => $user[$fields['username']]];
         $data = [
-            $fields['token'] => str_replace('-', '', Text::uuid()),
+            $fields['token'] => Security::randomBytes($config['token']['length']),
             $fields['expires'] => new \DateTime($config['token']['expires']),
         ];
         $table->updateAll($data, $conditions);
